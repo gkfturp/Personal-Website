@@ -50,12 +50,6 @@ export default function ResumeExperience({ experiences }: { experiences: Experie
       </div>
 
       <div className="relative group/container">
-        {/* Left Gradient Mask */}
-        <div className={`absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent z-10 pointer-events-none hidden md:block transition-opacity duration-300 ${canScrollLeft ? 'opacity-100' : 'opacity-0'}`} />
-        
-        {/* Right Gradient Mask */}
-        <div className={`absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent z-10 pointer-events-none hidden md:block transition-opacity duration-300 ${canScrollRight ? 'opacity-100' : 'opacity-0'}`} />
-
         {/* Right Arrow Button */}
         <button 
           onClick={scrollRight}
@@ -74,6 +68,8 @@ export default function ResumeExperience({ experiences }: { experiences: Experie
           style={{ 
             scrollbarWidth: 'none', 
             msOverflowStyle: 'none',
+            maskImage: `linear-gradient(to right, ${canScrollLeft ? 'transparent, black 96px' : 'black, black 96px'}, black calc(100% - 96px), ${canScrollRight ? 'transparent' : 'black'})`,
+            WebkitMaskImage: `linear-gradient(to right, ${canScrollLeft ? 'transparent, black 96px' : 'black, black 96px'}, black calc(100% - 96px), ${canScrollRight ? 'transparent' : 'black'})`,
           }}
         >
           {/* Force Left Spacer */}

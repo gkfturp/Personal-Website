@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-600">
           <span>© {new Date().getFullYear()} Zesen. All Rights Reserved.</span>
-          <span className="tracking-widest">设计 · 交互 · 前端</span>
+          <span className="tracking-widest">Design · Coding · Product</span>
         </div>
       </div>
     </footer>

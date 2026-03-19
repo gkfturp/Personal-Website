@@ -11,11 +11,11 @@ export default function IntroLoader() {
     // 禁用滚动
     document.body.style.overflow = 'hidden';
 
-    // 2.2秒后开始执行退出动画（稍微延迟一点，让用户看清初始状态）
+    // 3秒后开始执行退出动画（稍微延迟一点，让用户看清初始状态）
     const timer = setTimeout(() => {
       setIsVisible(false);
       document.body.style.overflow = 'unset';
-    }, 2200);
+    }, 3000);
 
     return () => {
       clearTimeout(timer);
@@ -23,8 +23,8 @@ export default function IntroLoader() {
     };
   }, []);
 
-  // 8列设计，交错动画
-  const columns = Array.from({ length: 8 }, (_, i) => i);
+  // 16列设计，交错动画
+  const columns = Array.from({ length: 16 }, (_, i) => i);
 
   return (
     <AnimatePresence>
@@ -95,9 +95,9 @@ export default function IntroLoader() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-              className="text-neutral-400 text-xs md:text-sm tracking-[0.3em] font-light"
+              className="text-neutral-400 text-xs md:text-sm tracking-[0.3em] font-medium"
             >
-              设计 · 交互 · 产品
+              Design · Coding · Product
             </motion.div>
           </motion.div>
         </div>

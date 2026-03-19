@@ -36,8 +36,8 @@ export default function MouseGlow() {
 
   // 使用 useMotionTemplate 构建动态背景样式
   // 创建一个以鼠标为中心的径向渐变
-  // 600px 是光晕半径，rgba(255,255,255,0.06) 是中心最亮处的颜色（很淡的白色）
-  const background = useMotionTemplate`radial-gradient(300px circle at ${smoothX}px ${smoothY}px, rgba(255, 255, 255, 0.11), transparent 80%)`;
+  // 500px 是光晕半径，rgba(255,255,255,0.06) 是中心最亮处的颜色（很淡的白色）
+  const background = useMotionTemplate`radial-gradient(500px circle at ${smoothX}px ${smoothY}px, rgba(255, 255, 255, 0.06), transparent 80%)`;
 
   return (
     <motion.div

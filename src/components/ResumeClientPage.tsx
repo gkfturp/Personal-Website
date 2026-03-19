@@ -11,9 +11,9 @@ export default function ResumeClientPage({ experiences }: { experiences: Experie
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-20"
+          className="mb-20 mt-8"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-20 tracking-wide bg-gradient-to-b from-white via-neutral-200 to-neutral-600 bg-clip-text text-transparent">个人简历</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 tracking-wide bg-gradient-to-b from-white via-neutral-200 to-neutral-600 bg-clip-text text-transparent">个人简历</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
             {/* Photo - Reused from Hero component */}

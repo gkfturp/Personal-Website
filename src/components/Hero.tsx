@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="container max-w-[1200px] mx-auto px-6 pt-10 pb-20 space-y-20">
+    <section className="container max-w-[1200px] mx-auto px-6 py-12 space-y-20">
         {/* 顶部标题区域 */}
       <motion.div 
-        className="text-center space-y-4"
+        className="text-center space-y-4 mt-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -20,7 +20,7 @@ export default function Hero() {
       </motion.div>
 
       {/* 左右分栏区域 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-[800px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-[800px] mx-auto pt-4">
         {/* 左侧图片 */}
         <motion.div
           className="relative aspect-[3/4] max-w-[320px] mx-auto md:mx-0 bg-neutral-800 rounded-sm overflow-hidden shadow-2xl shadow-black/50"
