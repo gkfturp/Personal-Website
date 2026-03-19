@@ -14,7 +14,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-black backdrop-blur-sm border-b border-white/5">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-[32px] border-b border-white/5 transition-all duration-300">
       <div className="mx-auto max-w-6xl px-6 h-24 flex items-center justify-between">
         {/* Logo Section */}
         <Link href="/" className="group flex flex-col items-start gap-1">

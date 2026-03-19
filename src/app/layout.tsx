@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import MouseGlow from "@/components/MouseGlow";
+import IntroLoader from "@/components/IntroLoader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +25,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className={`${inter.className} antialiased text-white bg-brand`}>
+      <body className={`${inter.className} antialiased text-white bg-brand pt-24`}>
+        <IntroLoader />
+        <MouseGlow />
         <Navbar />
-        {children}
-        <Footer />
+        <div className="relative z-10">
+          {children}
+          <Footer />
+        </div>
+        <ScrollToTop />
       </body>
     </html>
   );

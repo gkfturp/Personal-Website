@@ -34,6 +34,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Trae
+.trae/
+
 # Sanity
 studio/node_modules
 studio/dist

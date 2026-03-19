@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="container max-w-[1200px] mx-auto px-6 py-20 space-y-20">
+    <section className="container max-w-[1200px] mx-auto px-6 pt-10 pb-20 space-y-20">
         {/* 顶部标题区域 */}
       <motion.div 
         className="text-center space-y-4"
@@ -11,7 +11,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider bg-gradient-to-b from-white via-neutral-200 to-neutral-600 bg-clip-text text-transparent pb-2">
           很高兴认识您
         </h1>
         <p className="text-sm md:text-base font-medium tracking-[0.5em] text-neutral-500 uppercase">
@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="flex items-baseline gap-2">
-            <span className="text-lg font-medium text-white">I'M</span>
+            <span className="text-lg font-medium text-white">I&apos;M</span>
             <span className="text-4xl md:text-5xl font-black tracking-wide text-white">ZESEN ,</span>
           </div>
           

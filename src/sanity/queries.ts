@@ -8,3 +8,9 @@ export const homeQuery = groq`{
     company, role, period, description
   }
 }`;
+
+export const resumeQuery = groq`
+  *[_type == "experience"] | order(period desc) {
+    company, role, period, description
+  }
+`;
